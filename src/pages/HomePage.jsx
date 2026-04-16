@@ -31,14 +31,14 @@ const HomePage = ({ products, loading, setCurrentPage }) => {
                 {displayText.split(" ").map((word, index) => (
                   <span key={index}>
                     {word === "Impian" ? (
-                      <span className="text-amber-600">{word}</span>
+                      <span className="text-amber-500">{word}</span>
                     ) : (
                       word
                     )}
                     {index < displayText.split(" ").length - 1 && " "}
                   </span>
                 ))}
-                <span className="animate-pulse text-amber-600"></span>
+                <span className="animate-pulse text-amber-500"></span>
               </h1>
               <p className="text-xl text-gray-600">
                 Furniture berkualitas tinggi dengan desain modern dan harga
@@ -48,13 +48,13 @@ const HomePage = ({ products, loading, setCurrentPage }) => {
               <div className="flex space-x-4">
                 <button
                   onClick={() => setCurrentPage("products")}
-                  className="bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-700 transition-all duration-300 transform hover:scale-105"
+                  className="bg-amber-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-600 transition-all duration-300 transform hover:scale-105"
                 >
                   Lihat Produk
                 </button>
                 <button
                   onClick={() => setCurrentPage("contact")}
-                  className="border-2 border-amber-600 text-amber-600 px-8 py-3 rounded-lg font-semibold hover:bg-amber-600 hover:text-white transition-all duration-300"
+                  className="border-2 border-amber-500 text-amber-500 px-8 py-3 rounded-lg font-semibold hover:bg-amber-500 hover:text-white transition-all duration-300"
                 >
                   Hubungi Kami
                 </button>
@@ -86,7 +86,7 @@ const HomePage = ({ products, loading, setCurrentPage }) => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto">
-                  <stat.icon className="w-8 h-8 text-amber-600" />
+                  <stat.icon className="w-8 h-8 text-amber-500" />
                 </div>
                 <div>
                   <h3 className="text-3xl font-bold text-gray-800">
@@ -113,7 +113,7 @@ const HomePage = ({ products, loading, setCurrentPage }) => {
 
           {loading ? (
             <div className="flex justify-center items-center py-20">
-              <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-amber-600"></div>
+              <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-amber-500"></div>
             </div>
           ) : (
             <div className="grid md:grid-cols-3 gap-8">
@@ -135,10 +135,10 @@ const HomePage = ({ products, loading, setCurrentPage }) => {
                           onClick={handleProductDetail}
                           className="bg-white p-2 rounded-full hover:bg-amber-100 transition-colors duration-300"
                         >
-                          <Eye size={20} className="text-amber-600" />
+                          <Eye size={20} className="text-amber-500" />
                         </button>
                         <button className="bg-white p-2 rounded-full hover:bg-amber-100 transition-colors duration-300">
-                          <Heart size={20} className="text-amber-600" />
+                          <Heart size={20} className="text-amber-500" />
                         </button>
                       </div>
                     </div>
@@ -147,12 +147,12 @@ const HomePage = ({ products, loading, setCurrentPage }) => {
                     <h3 className="text-xl font-semibold text-gray-800 mb-2">
                       {product.name}
                     </h3>
-                    <p className="text-2xl font-bold text-amber-600">
+                    <p className="text-2xl font-bold text-amber-500">
                       {product.price}
                     </p>
                     <button
                       onClick={handleProductDetail}
-                      className="w-full mt-4 bg-amber-600 text-white py-2 rounded-lg hover:bg-amber-700 transition-colors duration-300"
+                      className="w-full mt-4 bg-amber-500 text-white py-2 rounded-lg hover:bg-amber-600 transition-colors duration-300"
                     >
                       Lihat Detail
                     </button>

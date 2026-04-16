@@ -14,7 +14,7 @@ const ProductsPage = ({ products, loading }) => {
 
         {loading ? (
           <div className="flex justify-center items-center py-20">
-            <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-amber-600"></div>
+            <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-amber-500"></div>
           </div>
         ) : (
           <div className="grid md:grid-cols-3 gap-8">
@@ -31,20 +31,20 @@ const ProductsPage = ({ products, loading }) => {
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {product.category}
                     </span>
                   </div>
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                     <div className="flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <button className="bg-white p-3 rounded-full hover:bg-amber-100 transition-colors duration-300 transform hover:scale-110">
-                        <Eye size={20} className="text-amber-600" />
+                        <Eye size={20} className="text-amber-500" />
                       </button>
                       <button className="bg-white p-3 rounded-full hover:bg-amber-100 transition-colors duration-300 transform hover:scale-110">
-                        <Heart size={20} className="text-amber-600" />
+                        <Heart size={20} className="text-amber-500" />
                       </button>
                       <button className="bg-white p-3 rounded-full hover:bg-amber-100 transition-colors duration-300 transform hover:scale-110">
-                        <ShoppingCart size={20} className="text-amber-600" />
+                        <ShoppingCart size={20} className="text-amber-500" />
                       </button>
                     </div>
                   </div>
@@ -53,7 +53,7 @@ const ProductsPage = ({ products, loading }) => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     {product.name}
                   </h3>
-                  <p className="text-2xl font-bold text-amber-600 mb-4">
+                  <p className="text-2xl font-bold text-amber-500 mb-4">
                     {product.price}
                   </p>
                 </div>
@@ -76,7 +76,7 @@ const ProductsPage = ({ products, loading }) => {
                 >
                   <h3 className="font-semibold text-gray-800">{category}</h3>
                 </div>
-              )
+              ),
             )}
           </div>
         </div>

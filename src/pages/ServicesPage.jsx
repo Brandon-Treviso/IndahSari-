@@ -88,7 +88,7 @@ const ServicesPage = ({ testimonials, loading }) => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
-                <service.icon className="w-8 h-8 text-amber-600" />
+                <service.icon className="w-8 h-8 text-amber-500" />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">
                 {service.title}
@@ -100,7 +100,7 @@ const ServicesPage = ({ testimonials, loading }) => {
                     key={idx}
                     className="flex items-center text-sm text-gray-600"
                   >
-                    <div className="w-2 h-2 bg-amber-600 rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
@@ -116,7 +116,7 @@ const ServicesPage = ({ testimonials, loading }) => {
             </h2>
             {loading ? (
               <div className="flex justify-center">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-amber-600"></div>
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-amber-500"></div>
               </div>
             ) : (
               <div className="grid md:grid-cols-3 gap-8">

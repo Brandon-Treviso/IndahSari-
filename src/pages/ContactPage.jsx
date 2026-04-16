@@ -60,7 +60,7 @@ const ContactPage = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <contact.icon className="w-6 h-6 text-amber-600" />
+                    <contact.icon className="w-6 h-6 text-amber-500" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800">
@@ -122,13 +122,13 @@ const ContactPage = () => {
 
           <div className="animate-slide-in-right">
             <div className="bg-gradient-to-r from-cyan-50 to-indigo-100 p-8 rounded-lg shadow-lg">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6 hover:text-amber-600">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6 hover:text-amber-500">
                 Kirim Pesan
               </h2>
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-600">
+                    <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-500">
                       Nama Lengkap
                     </label>
                     <input
@@ -138,7 +138,7 @@ const ContactPage = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-600">
+                    <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-500">
                       Email
                     </label>
                     <input
@@ -149,7 +149,7 @@ const ContactPage = () => {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-600">
+                  <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-500">
                     Nomor Telepon
                   </label>
                   <input
@@ -159,7 +159,7 @@ const ContactPage = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-600">
+                  <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-500">
                     Subjek
                   </label>
                   <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-300 hover:bg-amber-50">
@@ -171,7 +171,7 @@ const ContactPage = () => {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-600">
+                  <label className="block text-sm font-medium text-gray-700 mb-2 hover:text-amber-500">
                     Pesan
                   </label>
                   <textarea
@@ -182,7 +182,7 @@ const ContactPage = () => {
                 </div>
                 <button
                   type="button"
-                  className="w-full bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 transition-all duration-300 transform hover:scale-105"
+                  className="w-full bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-500 transition-all duration-300 transform hover:scale-105"
                   onClick={() => alert("Pesan terkirim")}
                 >
                   Kirim Pesan
@@ -212,7 +212,7 @@ const ContactPage = () => {
             </div>
             <div className="mt-4 text-center">
               <p className="text-gray-600">
-                <MapPin className="inline w-5 h-5 mr-2 text-amber-600" />
+                <MapPin className="inline w-5 h-5 mr-2 text-amber-500" />
                 Jl. Ahmad Yani, Harapan, Kec. Pemangkat, Kabupaten Sambas,
                 Kalimantan Barat 79453
               </p>
