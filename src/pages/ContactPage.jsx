@@ -1,14 +1,7 @@
 import React from "react";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  Facebook,
-  Instagram,
-  Youtube,
-  MessageCircle,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const ContactPage = () => {
   return (
@@ -81,13 +74,13 @@ const ContactPage = () => {
               <div className="flex space-x-4 gap-8 justify-center">
                 {[
                   {
-                    icon: Facebook,
+                    icon: FaFacebook,
                     name: "Facebook",
                     url: "https://www.facebook.com/Caroline.Gumarus",
                     bgColor: "bg-blue-600 hover:bg-blue-700",
                   },
                   {
-                    icon: Instagram,
+                    icon: FaInstagram,
                     name: "Instagram",
                     url: "https://www.instagram.com/brandon.treviso/",
                     bgColor: "bg-pink-600 hover:bg-pink-700",
@@ -99,7 +92,7 @@ const ContactPage = () => {
                     bgColor: "bg-green-600 hover:bg-green-700",
                   },
                   {
-                    icon: Youtube,
+                    icon: FaYoutube,
                     name: "YouTube",
                     url: "https://www.youtube.com/channel/UCRJ6Y2sl4ibrWrBbSuATRcg",
                     bgColor: "bg-red-600 hover:bg-red-700",
